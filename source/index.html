@@ -8,6 +8,95 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <div class="page-container">
+      <header class="header">
+        <nav class="header__nav">
+          <a class="nav__logo-link">
+            <img class="nav__logo">
+          </a>
+          <a class="nav__logo-link">
+            <img class="nav__logo-text">
+          </a>
+          <select class="nav__item nav__item-dropdown" aria-label="Меню">
+            <option class="nav__link" value="cheap">Главная</option>
+            <option class="nav__link" value="popular">Каталог продукции</option>
+            <option class="nav__link" value="expensive">Подбор программы</option>
+          </select>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <h1 class="hero__title">Функциональное питание для котов</h1>
+          <p class="hero__text">Занялся собой? Займись котом!</p>
+          <a class="hero__link link-form">
+            <p class="link-form--link-button">Подобрать программу</p>
+          </a>
+        </section>
+        <section class="program">
+          <ul class="program__list">
+            <li class="program__item program-item">
+              <h2 class="program-item__title">Похудение</h2>
+              <p class="program-item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="program-item__link link-slim">
+                <span class="program-item__link-text">Каталог slim</span><!-- не уверенна в классе - не то подчинение, но сокращает код -->
+                <div></div><!-- не уверенна, что нужен див для стрелки -->
+              </a>
+            </li>
+            <li class="program__item program-item">
+              <h2 class="program-item__title title--uppercase">Набор массы</h2><!-- не уверенна, чтомодификатор выглядит верно -->
+              <p class="program-item__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="program-item__link link-pro">
+                <span class="program-item__link-text">Каталог pro</span><!-- не уверенна в классе - не то подчинение, но сокращает код -->
+                <div></div><!-- не уверенна, что нужен див для стрелки -->
+              </a>
+            </li>
+          </ul>
+        </section>
+        <section class="concept">
+          <h2 class="concept__title title--big">Как это работает</h2><!-- не уверенна, чтомодификатор выглядит верно -->
+          <ul class="concept__list">
+            <li class="concept__item">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="concept__item">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="concept__item">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="concept__item">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
+          </ul><!-- вышло линейно? -->
+        </section>
+        <section class="example">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <ul class="example__list example-list">
+            <li class="example-list__item example-item">
+              <span class="example-item__subtitle">снижение веса</span>
+              <span class="example-item__mark">5 КГ</span>
+            </li>
+            <li class="example-list__item example-item">
+              <span class="example-item__subtitle">затрачено времени</span>
+              <span class="example-item__mark">60 ДНЕЙ</span>
+            </li>
+            <li class="example-list__item example-item-total">
+              <span class="example-item-total__subtitle">Затраты на питание:</span>
+              <span class="example-item-total__mark">15 000 РУБ.</span>
+            </li>
+          </ul>
+          <svg class="example__img img-before"></svg>
+          <svg class="example__img img-after"></svg>
+          <button class="example__img-slider"></button><!-- или кнопка подчиняется картинке и в сущности ее часть? -->
+        </section>
+        <section class="dealers-invitation">
+          <p>Приглашаем к сотрудничеству дилеров!</p>
+          <p>
+            <span>ул. Большая Конюшенная, д. 19/8</span>
+            <span>Санкт-Петербург</span>
+          </p>
+        </section>
+        <section>
+          <p>карта</p>
+        </section>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
   </body>
 </html>
