@@ -11,16 +11,21 @@
     <div class="page-container">
       <header class="header">
         <nav class="header__nav">
-          <a class="nav__logo-link">
+          <a class="nav__logo-link" href="index.html">
             <img class="nav__logo">
           </a>
-          <a class="nav__logo-link">
-            <img class="nav__logo-text">
+          <a class="nav__logo-link" href="index.html">
+            <img class="nav__logo-text logo-text">
           </a>
-          <select class="nav__item nav__item-dropdown" aria-label="Меню">
-            <option class="nav__link" value="cheap">Главная</option>
-            <option class="nav__link" value="popular">Каталог продукции</option>
-            <option class="nav__link" value="expensive">Подбор программы</option>
+          <select class="nav__dropdown nav-dropdown" aria-label="Меню">
+            <option class="nav-dropdown__item nav-item" value="cheap">
+              <a class="nav-item__link" href="index.html">Главная</a>
+            </option>
+            <option class="nav-dropdown__item nav-item" value="popular">
+              <a class="nav-item__link" href="catalog.html">Каталог продукции</a>
+            </option>
+            <option class="nav-dropdown__item nav-item" value="expensive">
+              <a class="nav-item__link" href="#"></a>Подбор программы</option>
           </select>
         </nav>
       </header>
@@ -29,7 +34,7 @@
         <section class="hero">
           <h1 class="hero__title">Функциональное питание для котов</h1>
           <p class="hero__text">Занялся собой? Займись котом!</p>
-          <a class="hero__link link-form">
+          <a class="hero__link link-form" href="form.html">
             <p class="link-form--link-button">Подобрать программу</p>
           </a>
         </section>
@@ -38,7 +43,7 @@
             <li class="program__item program-item">
               <h2 class="program-item__title">Похудение</h2>
               <p class="program-item__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="program-item__link link-slim">
+              <a class="program-item__link link-slim" href="#">
                 <span class="program-item__link-text">Каталог slim</span><!-- не уверенна в классе - не то подчинение, но сокращает код -->
                 <div></div><!-- не уверенна, что нужен див для стрелки -->
               </a>
@@ -46,7 +51,7 @@
             <li class="program__item program-item">
               <h2 class="program-item__title title--uppercase">Набор массы</h2><!-- не уверенна, чтомодификатор выглядит верно -->
               <p class="program-item__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="program-item__link link-pro">
+              <a class="program-item__link link-pro" href="#">
                 <span class="program-item__link-text">Каталог pro</span><!-- не уверенна в классе - не то подчинение, но сокращает код -->
                 <div></div><!-- не уверенна, что нужен див для стрелки -->
               </a>
@@ -84,17 +89,40 @@
           <button class="example__img-slider"></button><!-- или кнопка подчиняется картинке и в сущности ее часть? -->
         </section>
         <section class="dealers-invitation">
-          <p>Приглашаем к сотрудничеству дилеров!</p>
-          <p>
-            <span>ул. Большая Конюшенная, д. 19/8</span>
-            <span>Санкт-Петербург</span>
-          </p>
+          <h2 class="dealers-invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <div class="dealers-invitation__address address">
+            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="address__city">Санкт-Петербург</span>
+          </div>
         </section>
-        <section>
-          <p>карта</p>
+        <section class="map-spb">
+          <h2 class="visually-hidden">Карта.</h2>
+          <p class="map-spb__img"></p>
         </section>
       </main>
-      <footer>
+      <footer class="footer">
+        <h2 class="visually-hidden">Cat Energy.</h2>
+        <img class="footer__logo-text logo-text"><!--как делать универсальные названия и сохранить бэм? так?-->
+        <h2 class="visually-hidden">Социальные сети.</h2>
+        <ul class="social-media">
+          <li>
+            <a class="social-link" href="#">
+              <span class="visually-hidden">ВКонтакте.</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Telegram.</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <span class="visually-hidden">YouTube.</span>
+            </a>
+          </li>
+        </ul>
+        <h2 class="visually-hidden">html-academy.</h2>
+        <a class="logo-html-academy" href="https://htmlacademy.ru">
 
       </footer>
     </div>
