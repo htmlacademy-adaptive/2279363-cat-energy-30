@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Название проекта</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body class="page__body">
+    <div class="page-container">
+      <header class="header">
+        <nav class="header__nav nav">
+          <a class="nav__logo-link" href="index.html">
+            <img class="nav__logo">
+          </a>
+          <a class="nav__logo-link" href="index.html">
+            <img class="nav__logo-text logo-text">
+          </a>
+          <select class="nav__dropdown nav-dropdown" aria-label="Меню">
+            <option class="nav-dropdown__item nav-item" value="cheap">
+              <a class="nav-item__link" href="index.html">Главная</a>
+            </option>
+            <option class="nav-dropdown__item nav-item" value="popular">
+              <a class="nav-item__link" href="catalog.html">Каталог продукции</a>
+            </option>
+            <option class="nav-dropdown__item nav-item" value="expensive">
+              <a class="nav-item__link" href="#"></a>Подбор программы</option>
+          </select>
+        </nav>
+      </header>
+      <main class="form-main">
+        <h1 class="form-main__title">Подбор программы</h1>
+        <p class="form-main__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="form-main__content form-content" action="#" method="post">
+          <h2 class="visually-hidden">Основные сведения.</h2>
+          <fieldset class="form-content__questionary questionary">
+            <legend class="visually-hidden">Персональные данные.</legend>
+            <ul class="questionary__list questionary-list">
+              <li class="questionary-list__item questionary-item">
+                <label class="questionary-item__caption" for="name">Имя:*</label>
+                <input class="questionary-item__field" type="text" name="name" placeholder="Барсик" id="name" required>
+              </li>
+              <li class="questionary-list__item questionary-item">
+                <label class="questionary-item__caption" for="weight">Вес (кг):*</label>
+                <input class="questionary-item__field" type="number" name="weight" placeholder="7" id="weight" required max="100000">
+              </li>
+              <li class="questionary-list__item questionary-item">
+                <label class="questionary-item__caption" for="age">Возраст (лет):</label>
+                <input class="questionary-item__field" type="number" name="age" placeholder="7" id="age" max="300">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-content__questionary questionary ">
+            <legend class="visually-hidden">Цель.</legend>
+            <ul class="questionary__list questionary-list">
+              <li class="questionary-list__item questionary-item">
+                <input class="questionary-item__field" type="radio" name="purpose" id="weight-lose" value="frontend" checked>
+                <label class="questionary-item__caption" for="weight-lose">Похудение</label>
+              </li>
+              <li class="questionary-list__item questionary-item">
+                <input class="questionary-item__field" type="radio" name="purpose" id="weight-gain" value="weight-gain">
+                <label class="questionary-item__caption" for="weight-gain">Набор массы</label>
+              </li>
+              <li class="questionary-list__item questionary-item">
+                <input class="questionary-item__field" type="radio" name="purpose" id="need-advice" value="need-advice">
+                <label class="questionary-item__caption" for="need-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <h2 class="form-content__title">Контактные данные (владельца кота)</h2>
+          <fieldset class="form-content__questionary questionary">
+            <legend class="visually-hidden">Контакты</legend>
+            <ul>
+              <li>
+                <label for="email">E-mail:*</label>
+                <input type="email" name="mail" placeholder="кuklachev@gmail.com" id="email" required>
+              </li>
+              <li>
+                <label for="number">Телефон:*</label>
+                <input type="tel" name="phone" placeholder="8 (960) 900-60-90" id="number" maxlength="21" required>
+              </li>
+            </ul>
+          </fieldset>
+          <h2 class="form-content__title">Комментарий</h2>
+          <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea><!--проверить размеры-->
+          <h2>Дополнительно</h2>
+          <fieldset class="form-content__questionary"><!--можно без legend?-->
+            <ul>
+              <li>
+                <input type="checkbox" name="add" id="sweetener" checked>
+                <label for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="add" id="milk">
+                <label for="milk">Молоко</label>
+              </li>
+              <li>
+                <input type="checkbox" name="add" id="water">
+                <label for="water">Питьевая вода</label>
+              </li>
+              <li>
+                <input type="checkbox" name="add" id="vitamins">
+                <label for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <button type="submit">Отправить заявку</button>
+            <p>* — Обязательные поля</p>
+          </div>
+        </form>
+        <section class="dealers-invitation">
+          <h2 class="dealers-invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
+          <div class="dealers-invitation__address address">
+            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
+            <span class="address__city">Санкт-Петербург</span>
+          </div>
+        </section>
+        <section class="map-spb">
+          <h2 class="visually-hidden">Карта.</h2>
+          <p class="map-spb__img">карта</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <h2 class="visually-hidden">Cat Energy.</h2>
+        <img class="footer__logo-text logo-text"><!--как делать универсальные названия и сохранить бэм? так?-->
+        <h2 class="visually-hidden">Социальные сети.</h2>
+        <ul class="social-media">
+          <li>
+            <a class="social-link" href="#">
+              <span class="visually-hidden">ВКонтакте.</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <span class="visually-hidden">Telegram.</span>
+            </a>
+          </li>
+          <li>
+            <a class="social-link" href="#">
+              <span class="visually-hidden">YouTube.</span>
+            </a>
+          </li>
+        </ul>
+        <h2 class="visually-hidden">html-academy.</h2>
+        <a class="logo-html-academy" href="https://htmlacademy.ru">
+      </footer>
+    </div>
+  </body>
+</html>
