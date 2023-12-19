@@ -5,13 +5,17 @@
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="body">
     <div class="page-container">
       <header class="main-header main-header--index">
         <div class="main-header__container container">
-          <a class="main-header__logo logo" href="index.html" aria-current="page">
+          <a class="main-header__logo logo" href="index.html" aria-current="page"><!--Графика-->
             <img src="#" alt="Логотип Сat energy." width="33" height="38">
             <img src="#" alt="Текст Cat energy." width="101" height="18">
           </a>
@@ -41,7 +45,11 @@
               </div>
             </div>
             <a class="hero__link button" href="form.html">Подобрать программу</a>
-            <img class="hero__image" src="#" alt="Коробка с функциональным питанием для котов" width="280" height="270">
+            <picture>
+              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/image-tablet@1x.png 1x, images/image-tablet@2x.png 2x">
+              <img class="hero__image" width="280" height="270" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" alt="Коробка с функциональным питанием для котов.">
+            </picture>
           </section>
         </div>
       </header>
@@ -95,10 +103,18 @@
             </ul>
             <div class="example__slider slider">
               <div class="slider_image slider_image--before">
-                <img src="#" width="280" height="256" alt="Полный кот">
+                <picture>
+                  <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-plump-tablet@1x.png 1x, images/cat-plump-tablet@2x.png 2x">
+                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/image-tablet@1x.png 1x, images/image-tablet@2x.png 2x">
+                  <img width="280" height="256" src="images/cat-plump-mobile@1x.png" srcset="images/cat-plump-mobile@2x.png 2x" alt="Полный кот.">
+                </picture>
               </div>
               <div class="slider_image slider_image--after">
-                <img src="#" width="280" height="256" alt="Стройный кот">
+                <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
+                  <img width="280" height="256" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Стройный кот.">
+                </picture>
               </div>
             </div>
             <button class="example__slider-button" type="button">
@@ -116,8 +132,12 @@
           </div>
           <div class="map__iframe-container">
             <noscript>
-              <a class="map__img" href="#">
-                <img src="#" alt="Карта" width="320" height="362">
+              <a class="map__image" href="#">
+                <picture>
+                  <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+                  <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+                  <img width="320" height="362" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта.">
+                </picture>
               </a>
             </noscript>
             <div class="map__iframe">
