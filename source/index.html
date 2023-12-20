@@ -5,49 +5,58 @@
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/favicon-180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
 
   <body class="body">
     <div class="page-container">
-      <header class="main-header header--index">
-        <div class="main-header__container">
-          <a class="main-header__logo logo" href="index.html" aria-current="page">
-            <img src="#" alt="Функциональное питание Cat energy." width="33" height="38">
-            <img src="#" alt="Функциональное питание Cat energy." width="101" height="18">
+      <header class="main-header main-header--index">
+        <div class="main-header__container container">
+          <a class="main-header__logo logo" href="index.html" aria-current="page"><!--Графика-->
+            <img src="#" alt="Логотип Сat energy." width="33" height="38">
+            <img src="#" alt="Текст Cat energy." width="101" height="18">
           </a>
           <nav class="main-header__nav nav">
             <button class="nav__toggle" type="button">
-              <span class="nav__toggle-button">Открыть меню</span>
+              <span class="visually-hidden">Открыть или закрыть меню</span>
             </button>
             <div class="nav__container">
               <ul class="nav__list nav-list">
-                <li class="nav-list__item nav-item">
-                  <a class="nav-item__link nav-item__link--current" href="index.html" aria-current="page">Главная</a>
+                <li class="nav-list__item">
+                  <a class="nav-list__link nav-item__link--current" href="index.html" aria-current="page">Главная</a>
                 </li>
                 <li class="nav-list__item nav-item">
-                  <a class="nav-item__link" href="catalog.html">Каталог продукции</a>
+                  <a class="nav-list__link" href="catalog.html">Каталог продукции</a>
                 </li>
                 <li class="nav-list__item nav-item">
-                  <a class="nav-item__link" href="form.html">Подбор программы</a>
+                  <a class="nav-list__link" href="form.html">Подбор программы</a>
                 </li>
               </ul>
             </div>
           </nav>
           <section class="hero hero--index">
-            <div class="hero-container">
-              <h1 class="hero__title hero-title">Функциональное питание для котов</h1>
-              <p class="hero__text">Занялся собой? Займись котом!</p>
+            <div class="hero__container container">
+              <div class="hero__description">
+                <h1 class="hero__title title">Функциональное питание для котов</h1>
+                <p class="hero__text">Занялся собой? Займись котом!</p>
+              </div>
             </div>
             <a class="hero__link button" href="form.html">Подобрать программу</a>
-            <img class="hero-image" src="#" alt="Коробка с функциональным питанием для котов">
+            <picture>
+              <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
+              <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/image-tablet@1x.png 1x, images/image-tablet@2x.png 2x">
+              <img class="hero__image" width="280" height="270" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" alt="Коробка с функциональным питанием для котов.">
+            </picture>
           </section>
         </div>
       </header>
 
       <main class="index-main">
         <section class="programs">
-          <div class=" programs__container">
+          <div class=" programs__container container">
             <h2 class="visually-hidden">Программы функционального питания</h2>
           <ul class="programs__list">
             <li class="programs__item program-item">
@@ -94,10 +103,18 @@
             </ul>
             <div class="example__slider slider">
               <div class="slider_image slider_image--before">
-                <img src="#" width="280" height="256" alt="Полный кот">
+                <picture>
+                  <source width="560" height="512" type="image/png" media="(min-width: 1440px)" srcset="images/cat-plump-tablet@1x.png 1x, images/cat-plump-tablet@2x.png 2x">
+                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/image-tablet@1x.png 1x, images/image-tablet@2x.png 2x">
+                  <img width="280" height="256" src="images/cat-plump-mobile@1x.png" srcset="images/cat-plump-mobile@2x.png 2x" alt="Полный кот.">
+                </picture>
               </div>
               <div class="slider_image slider_image--after">
-                <img src="#" width="280" height="256" alt="Стройный кот">
+                <picture>
+                  <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
+                  <img width="280" height="256" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" alt="Стройный кот.">
+                </picture>
               </div>
             </div>
             <button class="example__slider-button" type="button">
@@ -105,35 +122,37 @@
             </button>
           </div>
         </section>
-        <section class="dealers-invitation dealers-invitation--index">
-          <div class="dealers-invitation__container dealers-invitation-container">
-            <div class="dealers-invitation-container__wrapper">
-              <h2 class="dealers-invitation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <address class="dealers-invitation__address address">
-            <span class="address__street">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="address__city">Санкт-Петербург</span>
-          </address>
+        <section class="map">
+          <div class="map__container container">
+            <h2 class="visually-hidden">Местонахождение.</h2>
+            <div class="map__contact">
+              <h3 class="map__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h3>
+              <p class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
             </div>
           </div>
-          <div class="dealers-invitation__map-static map-static">
+          <div class="map__iframe-container">
             <noscript>
-              <a class="map-satic__link" href="#">
-                <img src="#" alt="Карта Санкт-Петербург">
+              <a class="map__image" href="#">
+                <picture>
+                  <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+                  <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+                  <img width="320" height="362" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта.">
+                </picture>
               </a>
             </noscript>
-          </div>
-          <div class="dealers-invitation__map-interactive">
-            <iframe src="#"></iframe>
+            <div class="map__iframe">
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.58095197757!2d30.319410323390894!3d59.93909537160517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1603140540112!5m2!1sru!2sru" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+            </div>
           </div>
         </section>
+
       </main>
+
       <footer class="footer">
-        <div class="footer-container">
-          <h2 class="visually-hidden">Функциональное питание Cat energy.</h2>
+        <div class="footer__container">
           <a class="footer__logo" href="index.html" aria-current="page">
             <img class="footer__logo-text" src="#" width="128" height="24" alt="Функциональное питание Cat energy.">
           </a>
-          <h2 class="visually-hidden">Социальные сети.</h2>
           <ul class="social">
             <li class="social__item">
               <a class="social__link" href="#">
@@ -151,13 +170,13 @@
               </a>
             </li>
           </ul>
-          <h2 class="visually-hidden">html-academy.</h2>
-          <a class="footer__copyright" href="https://htmlacademy.ru"><!--изменить ссылку на лендинг-->
+          <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="footer__copyright-text">HTML Academy</span>
             <img class="footer__copyright-logo" src="#" width="27" height="34" alt="HTML Academy.">
           </a>
         </div>
       </footer>
     </div>
+    <script src="scripts/index.js" defer></script>
   </body>
 </html>
