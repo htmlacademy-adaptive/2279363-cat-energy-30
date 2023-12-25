@@ -32,8 +32,10 @@
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  background-color: $base-green;//удалить когда встанет фон
 }
 
 .product__button--promo {
   color: $base-color-text;
+  background-color: $base-gray;//удалить когда встанет фон
 }
