@@ -1,0 +1,41 @@
+.product__link {
+  color: #222222;
+  text-decoration: none;
+}
+
+.product__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product__title--promo {
+  color: #111111;
+}
+
+.product__specs-parametr{
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product__specs-value {
+  font-size: 12px;
+  line-height: 16px;
+  color: #444444;
+}
+
+.product__button {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $base-green;//удалить когда встанет фон
+}
+
+.product__button--promo {
+  color: $base-color-text;
+  background-color: $base-gray;//удалить когда встанет фон
+}
