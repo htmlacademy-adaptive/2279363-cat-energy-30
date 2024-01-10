@@ -1,8 +1,8 @@
 .nav-list__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
-  color: #000000;
+  color: $second-color-text;
   text-transform: uppercase;
   text-decoration: none;
 }

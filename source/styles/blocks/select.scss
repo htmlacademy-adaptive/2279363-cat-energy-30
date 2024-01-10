@@ -1,12 +1,12 @@
 .select__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $second-color-text;
 }
 
 .select__text {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   text-transform: uppercase;
-  color: #000000;
+  color: $second-color-text;
 }

@@ -4,7 +4,7 @@
 }
 
 .product__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -14,28 +14,27 @@
   color: #111111;
 }
 
-.product__specs-parametr{
+.product__specs-parametr {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
 }
 
 .product__specs-value {
   font-size: 12px;
   line-height: 16px;
-  color: #444444;
 }
 
 .product__button {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
+  color: $light-color-text;
   text-transform: uppercase;
-  background-color: $base-green;//удалить когда встанет фон
+  text-decoration: none;
+  background-color: $base-color-bg;//удалить когда встанет фон
 }
 
 .product__button--promo {
   color: $base-color-text;
-  background-color: $base-gray;//удалить когда встанет фон
+  background-color: $second-color-bg;//удалить когда встанет фон
 }
