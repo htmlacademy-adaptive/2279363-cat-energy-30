@@ -12,11 +12,9 @@
   color: $light-color-text;
   text-align: center;
 
-  background-image: linear-gradient(
-    rgba($base-color-bg, 85%)
-    rgba($base-color-bg, 85%)
-  ),
-  url("../../images/cat-bonus-desktop@2x.webp");//поменять на мобильную
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),// как сделать с opacity или transparent?
+  url("../../images/cat-bonus-desktop@2x.webp"),
+  url("../../images/icons/stack.svg#icon-gift");
   background-repeat: no-repeat;
   background-position: center, cover;
 }

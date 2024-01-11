@@ -1,0 +1,30 @@
+.social__item-vk {
+  mask-image: url("../../images/icons/stack.svg#vkontakte");
+  background-color: #666666;
+}
+
+.social__item-vk:hover,
+.social__item-vk:focus,
+.social__item-tg:hover,
+.social__item-tg:focus,
+.social__item-yt:hover,
+.social__item-yt:focus {
+background-color: $base-color-bg;
+}
+
+.social__item-vk:active,
+.social__item-tg:active,
+.social__item-yt:active {
+  background-color: $base-color-bg;
+  opacity: 0.3;
+}
+
+.social__item-tg {
+  mask-image: url("../../images/icons/stack.svg#telegram");
+  background-color: #666666;
+}
+
+.social__item-yt {
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  background-color: #666666;
+}

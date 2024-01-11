@@ -1,3 +1,7 @@
+.nav-list {
+  list-style-type: none;
+}
+
 .nav-list__link {
   font-family: $secondary-font;
   font-size: 20px;
@@ -5,4 +9,9 @@
   color: $second-color-text;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.nav-list__link:hover,
+.nav-list__link:focus {
+opacity: 0.6;
 }

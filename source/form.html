@@ -14,9 +14,13 @@
     <div class="page-container">
       <header class="main-header">
         <div class="main-header__container container">
-          <a class="main-header__logo logo" href="index.html">
-            <img src="#" alt="Логотип Сat energy." width="33" height="38">
-            <img src="#" alt="Текст Cat energy." width="101" height="18">
+          <a class="main-header__logo logo" href="index.html" aria-current="page">
+            <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-desktop.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img src="images/logo-mobile.svg" alt="Логотип Сat energy." width="33" height="38">
+            </picture>
+            <img src="images/logo-text.svg" alt="Интернет-магазин Cat energy." width="101" height="18">
           </a>
           <nav class="main-header__nav nav">
             <button class="nav__toggle" type="button">
@@ -143,9 +147,24 @@
             <noscript>
               <a class="map__image" href="#">
                 <picture>
-                  <source width="1440" height="400" type="image/png" media="(min-width: 1300px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-                  <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-                  <img width="320" height="362" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Карта.">
+                  <source width="1440" height="400"
+                    type="image/webp" media="(min-width: 1300px)"
+                    srcset="images/map-desktop@1x.webp, images/map-desktop@2x.webp">
+                  <source width="768" height="400"
+                    type="image/webp" media="(min-width: 768px)"
+                    srcset="images/map-tablet@1x.webp, images/map-tablet@2x.webp">
+                    <source width="320" height="362"
+                    type="image/webp"
+                    srcset="images/map-mobile@1x.webp, images/map-mobile@2x.webp">
+                  <source width="1440" height="400"
+                    type="image/png" media="(min-width: 1300px)"
+                    srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+                  <source width="768" height="400"
+                    type="image/png" media="(min-width: 768px)"
+                    srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+                  <img width="320" height="362"
+                    src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x"
+                    alt="Карта.">
                 </picture>
               </a>
             </noscript>

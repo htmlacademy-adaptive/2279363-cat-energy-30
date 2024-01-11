@@ -14,9 +14,13 @@
     <div class="page-container">
       <header class="main-header">
         <div class="main-header__container container">
-          <a class="main-header__logo logo" href="index.html">
-            <img src="#" alt="Логотип Сat energy." width="33" height="38">
-            <img src="#" alt="Текст Cat energy." width="101" height="18">
+          <a class="main-header__logo logo" href="index.html" aria-current="page">
+            <picture>
+              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-desktop.svg">
+              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img src="images/logo-mobile.svg" alt="Логотип Сat energy." width="33" height="38">
+            </picture>
+            <img src="images/logo-text.svg" alt="Интернет-магазин Cat energy." width="101" height="18">
           </a>
           <nav class="main-header__nav nav">
             <button class="nav__toggle" type="button">
@@ -381,6 +385,7 @@
                 </ul>
                 <div class="extra__promo">
                   <p class="extra__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+                  <span class="extra__promo-icon"></span>
                 </div>
               </div>
             </div>

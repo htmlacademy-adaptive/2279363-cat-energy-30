@@ -4,3 +4,27 @@
   line-height: 40px;
   color: $second-color-text;
 }
+
+.concept__list {
+  list-style-type: none;
+}
+
+.concept__item-healthy {
+  background-image: url("../../images/icons/stack.svg#icon-leaf");
+  background-color: #ccc;//убрать потом
+}
+
+.concept__item-powder {
+  background-image: url("../../images/icons/stack.svg#icon-powder");
+  background-color: #ccc;//убрать потом
+}
+
+.concept__item-meal-replacement {
+  background-image: url("../../images/icons/stack.svg#icon-cutlery");
+  background-color: #ccc;//убрать потом
+}
+
+.concept__item-pet-results {
+  background-image: url("../../images/icons/stack.svg#icon-clock");
+  background-color: #ccc;//убрать потом
+}
