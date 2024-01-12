@@ -2,6 +2,10 @@
   font-family: $secondary-font;
 }
 
+.form__list {
+  list-style-type: none;
+}
+
 .form__label {
   font-size: 16px;
   text-transform: uppercase;
@@ -23,7 +27,7 @@
   text-transform: uppercase;
 }
 
-.form-button {
+.form__button {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
