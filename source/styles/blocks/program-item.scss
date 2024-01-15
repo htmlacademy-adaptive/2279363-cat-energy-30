@@ -1,16 +1,29 @@
+.program-item {
+  background-color: $second-color-bg;
+
+}
+
+.program-slim {
+  background-image: url("../../images/icons/stack.svg#cat-slim");
+}
+
+.program-muscular {
+  background-image: url("../../images/icons/stack.svg#cat-muscular");
+}
+
 .program-item__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
-  color: #000000;
+  color: $second-color-text;
   text-transform: uppercase;
 }
 
 .program-item__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  color: #000000;
+  color: $second-color-text;
   text-transform: uppercase;
   text-decoration: none;
 }

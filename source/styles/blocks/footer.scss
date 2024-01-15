@@ -7,3 +7,22 @@
   font-size: 16px;
   line-height: 20px;
 }
+
+.footer__logo:hover,
+.footer__logo:focus {
+  opacity: 0.8;
+}
+
+.footer__logo:active {
+  opacity: 0.6;
+}
+
+.footer__copyright-logo:hover,
+.footer__copyright-logo:focus {
+  background-color: $base-color-bg; //не верно. нужно исправить
+}
+
+.footer__copyright-logo:active {
+  opacity: 0.3;
+}
+

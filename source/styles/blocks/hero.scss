@@ -1,28 +1,30 @@
-.hero__description {
-  background-color: rgba(104, 183, 56, 0.85); //возможно придется удалить
+.hero {
+  font-family: $secondary-font;
+  color: $light-color-text;
+}
+
+.hero__container {
+  background-image: linear-gradient(
+    rgba($base-color-bg, 85%) 70%,
+    transparent 70% 100%); //возможно придется удалить
 }
 
 .hero__title {
-  font-family: "Oswald", sans-serif;
+  margin: 0;
   font-size: 36px;
-  line-height: 36px;
-  color: #ffffff;
-  text-align: center; //сомневаюсь
+  line-height: 36px; // медиа запрос только для мобильных
+  color: $light-color-text;
 }
 
 .hero__text {
-  font-family: "Oswald", sans-serif;
+  margin: 0;
   line-height: 14px;
-  color: #ffffff;
   text-transform: uppercase;
-  text-align: center; //сомневаюсь
 }
 
 .hero__link { //можно эти стили повесить на button?
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 }

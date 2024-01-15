@@ -1,39 +1,42 @@
+.form {
+  font-family: $secondary-font;
+}
+
+.form__list {
+  list-style-type: none;
+}
+
 .form__label {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .form__input::placeholder {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .form__title {
-  font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #000000;
+  color: $second-color-text;
 }
 
 .form__comment {
-  font-family: "Oswald", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.form-button {
-  font-family: "Oswald", sans-serif;
+.form__button {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $light-color-text;
 }
 
 .form__footnote {
   line-height: 16px;
-  color: #000000;
+  color: $second-color-text;
   text-align: center;
 }

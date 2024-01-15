@@ -1,6 +1,10 @@
 .catalog__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
-  color: #000000;
+  color: $second-color-text;
+}
+
+.catalog__list {
+  list-style-type: none;
 }
