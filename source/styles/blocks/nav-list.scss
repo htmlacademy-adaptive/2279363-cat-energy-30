@@ -1,5 +1,12 @@
 .nav-list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+}
+
+.nav-list__item {
+  text-align: center;
+  padding: 22px;
 }
 
 .nav-list__link {

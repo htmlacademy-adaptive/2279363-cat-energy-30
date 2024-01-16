@@ -6,25 +6,56 @@
 }
 
 .concept__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  gap: 26px;
 }
 
-.concept__item-healthy {
+.concept__item {
+
+}
+
+.concept__item-healthy::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-leaf");
-  background-color: #ccc;//убрать потом
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: $base-color-bg;//убрать потом
 }
 
-.concept__item-powder {
+.concept__item-powder::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-powder");
-  background-color: #ccc;//убрать потом
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: $base-color-bg;//убрать потом
 }
 
-.concept__item-meal-replacement {
+.concept__item-meal-replacement::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-cutlery");
-  background-color: #ccc;//убрать потом
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: $base-color-bg;//убрать потом
 }
 
-.concept__item-pet-results {
+.concept__item-pet-results::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-clock");
-  background-color: #ccc;//убрать потом
+  background-repeat: no-repeat;
+  background-position: left;
+  background-color: $base-color-bg;//убрать потом
 }

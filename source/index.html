@@ -15,18 +15,20 @@
     <div class="page-container">
       <header class="main-header main-header--index">
         <div class="main-header__container container">
-          <a class="main-header__logo logo" href="index.html" aria-current="page">
-            <picture>
-              <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-desktop.svg">
-              <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-              <img src="images/logo-mobile.svg" alt="Логотип Сat energy." width="33" height="38">
-            </picture>
-            <img src="images/logo-text.svg" alt="Интернет-магазин Cat energy." width="101" height="18">
-          </a>
-          <nav class="main-header__nav nav">
+          <div class="main-header__wraper">
+            <a class="main-header__logo logo" href="index.html" aria-current="page">
+              <picture>
+                <source width="70" height="59" type="image/svg+xml" media="(min-width: 1300px)" srcset="images/logo-desktop.svg">
+                <source width="60" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+                <img src="images/logo-mobile.svg" alt="Логотип Сat energy." width="33" height="38">
+              </picture>
+              <img src="images/logo-text.svg" alt="Интернет-магазин Cat energy." width="101" height="18">
+            </a>
             <button class="nav__toggle" type="button">
               <span class="visually-hidden">Открыть или закрыть меню</span>
             </button>
+          </div>
+          <nav class="main-header__nav nav">
             <div class="nav__container">
               <ul class="nav__list nav-list">
                 <li class="nav-list__item">
@@ -42,17 +44,18 @@
             </div>
           </nav>
           <section class="hero hero--index">
-            <div class="hero__container container">
+            <div class="hero__container">
               <h1 class="hero__title title">Функциональное питание для котов</h1>
               <p class="hero__text">Занялся собой? Займись котом!</p>
             </div>
-            <a class="hero__link button" href="form.html">Подобрать программу</a>
+
             <picture>
               <source width="552" height="499" type="image/png" media="(min-width: 1300px)" srcset="images/hero-desktop@1x.png 1x, images/hero-desktop@2x.png 2x">
               <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/image-tablet@1x.png 1x, images/image-tablet@2x.png 2x">
               <img class="hero__image" width="280" height="270" src="images/hero-mobile@1x.png" srcset="images/hero-mobile@2x.png 2x" alt="Коробка с функциональным питанием для котов.">
             </picture>
           </section>
+          <a class="hero__link button" href="form.html">Подобрать программу</a>
         </div>
       </header>
 
