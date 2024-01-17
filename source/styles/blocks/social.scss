@@ -1,3 +1,10 @@
+.social {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 24px;
+}
+
 .social__item-vk {
   mask-image: url("../../images/icons/stack.svg#vkontakte");
   background-color: #666666;

@@ -1,5 +1,4 @@
 .hero {
-  width: 320px;
   font-family: $secondary-font;
   color: $light-color-text;
   background: linear-gradient(rgba(104, 183, 56, 0.85),rgba(104, 183, 56, 0.85) 63%, #ffffff 63%, #ffffff);
@@ -26,11 +25,15 @@
   text-transform: uppercase;
 }
 
-.hero__link { //можно эти стили повесить на button?
+.hero__link { //можно эти стили шрифта повесить на button?
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__container {

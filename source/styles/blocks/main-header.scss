@@ -2,25 +2,25 @@
   width: 320px;
 
   @media (min-width: 768px) {
-    display: flex;
-    justify-content: space-between;
     padding: 25px 34px 0 30px;
   }
 }
 
 .main-header__nav {
   @media (min-width: 768px) {
-    width: 62%;
   }
 
 
   @media (min-width: 1300px) {
-    width: 50%;
   }
 }
 
 .main-header__wraper {
   padding: 13px 20px 14px;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .main-header__logo {

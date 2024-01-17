@@ -12,3 +12,9 @@
 .map__address {
   line-height: 20px;
 }
+
+.map__contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
