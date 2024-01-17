@@ -1,61 +1,95 @@
+.concept__container {
+  margin-bottom: 49px;
+}
+
 .concept__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   color: $second-color-text;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .concept__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
   gap: 26px;
 }
 
 .concept__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 60px 200px;
+  gap: 20px;
+}
+
+.concept__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-color: $base-color-bg;
+  position: absolute;
 
 }
 
-.concept__item-healthy::after {
+.concept__icon-healthy::after {
   content: "";
   display: block;
   width: 30px;
   height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-leaf");
   background-repeat: no-repeat;
-  background-position: left;
-  background-color: $base-color-bg;//убрать потом
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  z-index: 1;
 }
 
-.concept__item-powder::after {
+.concept__icon-powder::after {
   content: "";
   display: block;
   width: 30px;
   height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-powder");
   background-repeat: no-repeat;
-  background-position: left;
-  background-color: $base-color-bg;//убрать потом
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  z-index: 1;
 }
 
-.concept__item-meal-replacement::after {
+.concept__icon-meal-replacement::after {
   content: "";
   display: block;
   width: 30px;
   height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-cutlery");
   background-repeat: no-repeat;
-  background-position: left;
-  background-color: $base-color-bg;//убрать потом
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  z-index: 1;
 }
 
-.concept__item-pet-results::after {
+.concept__icon-pet-results::after {
   content: "";
   display: block;
   width: 30px;
   height: 32px;
   background-image: url("../../images/icons/stack.svg#icon-clock");
   background-repeat: no-repeat;
-  background-position: left;
-  background-color: $base-color-bg;//убрать потом
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  z-index: 1;
+}
+
+.concept__text {
+  margin: 0;
 }

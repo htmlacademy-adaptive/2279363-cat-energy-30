@@ -17,15 +17,18 @@
   font-size: 36px;
   line-height: 36px; // медиа запрос только для мобильных
   color: $light-color-text;
+  margin-bottom: 25px;
 }
 
 .hero__text {
   margin: 0;
   line-height: 14px;
   text-transform: uppercase;
+  margin-bottom: 29px;
 }
 
 .hero__link { //можно эти стили шрифта повесить на button?
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -34,6 +37,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 3px 20px 20px;
 }
 
 .hero__container {
