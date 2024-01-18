@@ -17,5 +17,11 @@
 .map__contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+}
+
+.map__iframe-container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 }

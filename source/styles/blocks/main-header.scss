@@ -15,12 +15,8 @@
   }
 }
 
-.main-header__wraper {
-  padding: 13px 20px 14px;
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-  }
+.main-header__ wraper {
+  
 }
 
 .main-header__logo {
@@ -28,4 +24,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+ }
+
+.main-header__toggle {
+  width: 24px;
+  height: 24px;
 }
