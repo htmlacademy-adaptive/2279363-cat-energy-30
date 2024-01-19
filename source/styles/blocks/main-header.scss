@@ -1,8 +1,8 @@
-.main-header__container {
+.main-header {
   width: 320px;
 
   @media (min-width: 768px) {
-    padding: 25px 34px 0 30px;
+    width: 768px;
   }
 }
 
@@ -15,16 +15,12 @@
   }
 }
 
-.main-header__ wraper {
-  
-}
-
-.main-header__logo {
-  max-width: 320px;
+.main-header__wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
- }
+  min-height: 65px;
+
+}
 
 .main-header__toggle {
   width: 24px;

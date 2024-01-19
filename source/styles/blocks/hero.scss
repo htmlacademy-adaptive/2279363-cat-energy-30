@@ -8,16 +8,25 @@
 
   @media (min-width: 768px) {
     color: $second-color-text;
-    background-color: #ffffff;
+    background: #ffffff;
+    text-align: left;
+    margin-left: 90px;
   }
 }
 
 .hero__title {
   margin: 0;
   font-size: 36px;
-  line-height: 36px; // медиа запрос только для мобильных
+  line-height: 36px;
   color: $light-color-text;
   margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    color: $second-color-text;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__text {
@@ -42,12 +51,8 @@
 
 .hero__container {
   @media (min-width: 768px) {
-    width: 768px;
-    text-align: left;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: 90px 416px 205px;
-    grid-template-rows: auto auto 54px 526px;
+
   }
   @media (min-width: 1300px) {
     width: 920px;
