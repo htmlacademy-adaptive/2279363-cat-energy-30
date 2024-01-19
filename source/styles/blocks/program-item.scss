@@ -1,14 +1,32 @@
 .program-item {
   background-color: $second-color-bg;
-
+  position: relative;
+  padding: 21px 33px 18px 20px;
+  margin-bottom: 20px;
 }
 
-.program-slim {
+.program-slim::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 56px;
   background-image: url("../../images/icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 21px;
+  left: 20px;
 }
 
-.program-muscular {
-  background-image: url("../../images/icons/stack.svg#cat-muscular");
+.program-muscular::after {
+  content: "";
+  display: block;
+  width: 67px;
+  height: 50px;
+  background-image: url("../../images/icons/stack.svg#cat-muscular");;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 21px;
+  left: 13px;
 }
 
 .program-item__title {
@@ -17,6 +35,11 @@
   line-height: 37px;
   color: $second-color-text;
   text-transform: uppercase;
+  margin: 9px 0 0 90px;
+}
+
+.program-item__text {
+  margin: 20px 0 23px 0;
 }
 
 .program-item__link {
@@ -26,4 +49,5 @@
   color: $second-color-text;
   text-transform: uppercase;
   text-decoration: none;
+  border-top: 1px solid #d9d9d9;
 }

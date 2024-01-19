@@ -1,28 +1,33 @@
+.footer__container {
+  background-color: $second-color-bg;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .footer__copyright {
   color: inherit;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__copyright-text {
   font-size: 16px;
   line-height: 20px;
+  align-self: center;
 }
 
-.footer__logo:hover,
-.footer__logo:focus {
-  opacity: 0.8;
+.footer__copyright:hover .footer__copyright-logo,
+.footer__copyright:focus .footer__copyright-logo {
+  color: $base-color-bg;//не ясно мне что с этим делать
 }
 
-.footer__logo:active {
-  opacity: 0.6;
-}
-
-.footer__copyright-logo:hover,
-.footer__copyright-logo:focus {
-  background-color: $base-color-bg; //не верно. нужно исправить
-}
-
-.footer__copyright-logo:active {
+.footer__copyright:active {
   opacity: 0.3;
 }
 
+.footer__logo {
+   align-self: center;
+}

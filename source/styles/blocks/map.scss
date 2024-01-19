@@ -1,8 +1,9 @@
 .map {
-  font-family: $secondary-font;
+
 }
 
 .map__title {
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -11,4 +12,16 @@
 
 .map__address {
   line-height: 20px;
+}
+
+.map__contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.map__iframe-container {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
 }

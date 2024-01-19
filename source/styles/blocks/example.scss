@@ -1,5 +1,7 @@
 .example__container {
   background-color: $third-color-bg;
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
 
 .example__title {
@@ -7,8 +9,14 @@
   font-size: 36px;
   line-height: 40px;
   color: $second-color-text;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .example__list {
   list-style-type: none;
+}
+
+.example__text {
+  margin: 0;
 }
